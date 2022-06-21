@@ -1,0 +1,258 @@
+@import url("./global.css");
+@import url("./index.css");
+
+.auth-header {
+  width: 90%;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--second-color);
+}
+
+#auth__main {
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+}
+
+#product__main {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product_main-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__img-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product_main-container img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.product__details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product__details h1 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.product__details p {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.product__details ul {
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.product__details ul li {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.product__details ul li span {
+  font-weight: 600;
+}
+
+.product_drone-form {
+  margin-top: 30px;
+}
+
+.product_drone-form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--white);
+  font-size: 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.form_edit {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upload_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select__container {
+  width: 49%;
+  text-transform: capitalize;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.select__container input,
+.select__container select {
+  border: none;
+  flex: 1;
+  height: 100%;
+  padding-left: 10px;
+  font-size: 20px;
+  display: flex;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+select option {
+  text-transform: capitalize;
+}
+
+.select__container input:focus,
+.select__container select:focus {
+  outline: none;
+}
+
+.select__btn {
+  width: 100%;
+  background-color: var(--main-color);
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.select__btn button {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+#auth__footer {
+  width: 90%;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  .product_main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product__img-container {
+    justify-content: center;
+  }
+
+  .product__details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .product__details ul {
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+
+  .upload_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .select__container {
+    height: 60px;
+  }
+
+  .select__container input,
+  .select__container select {
+    font-size: 17px;
+  }
+
+  .select__btn {
+    height: 60px;
+  }
+
+  .select__btn button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product__details ul {
+    margin-top: 20px;
+  }
+
+  .form_edit {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .upload_container {
+    flex-direction: column;
+  }
+
+  .select__container {
+    width: 100%;
+    text-transform: capitalize;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .select__container input,
+  .select__container select {
+    border: none;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  select option {
+    text-transform: capitalize;
+  }
+
+  .select__container input:focus {
+    outline: none;
+  }
+
+  .select__btn {
+    height: 40px;
+  }
+
+  .select__btn button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,87 @@
+@import url("./index.css");
+@import url("./auth.css");
+
+#dashboard__main {
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+}
+
+#dashboard {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.dashboard_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard_title h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.dashboard_title p {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.dashboard_title p a {
+  color: var(--main-color);
+}
+
+.dashboard_sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard_sub_title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.dashboard_sub_list li {
+  list-style: disc;
+  margin-top: 20px;
+}
+
+.dashboard_sub_list li:hover a {
+  border-bottom: 3px solid var(--main-color);
+}
+
+@media (max-width: 800px) {
+  .dashboard_title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .dashboard_title h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+  }
+
+  .dashboard_title p {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  .dashboard_sub_title {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .dashboard_sub_list li {
+    list-style: disc;
+    padding-left: 10px;
+  }
+}
+
+#auth__footer {
+  width: 90%;
+  padding: 0 1rem;
+}
